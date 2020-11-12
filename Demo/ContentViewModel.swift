@@ -58,12 +58,3 @@ final class ContentViewModel: ViewModel {
 //        return mutation.merge(with: m).eraseToAnyPublisher()
 //    }
 }
-
-final class APIClient {
-    static func send() -> Future<Int, Error> {
-        return Future { promise in
-            promise(.success(1))
-        }
-    }
-}
-
