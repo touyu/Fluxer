@@ -6,12 +6,46 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CFCA3FB4255DA28700AA2469 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCA3FB3255DA28700AA2469 /* DemoApp.swift */; };
+		CFCA3FB6255DA28700AA2469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCA3FB5255DA28700AA2469 /* ContentView.swift */; };
+		CFCA3FB8255DA28700AA2469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCA3FB7255DA28700AA2469 /* Assets.xcassets */; };
+		CFCA3FBB255DA28700AA2469 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCA3FBA255DA28700AA2469 /* Preview Assets.xcassets */; };
+		CFCA3FCA255DA2B200AA2469 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCA3FC9255DA2B200AA2469 /* ContentViewModel.swift */; };
+		CFCA3FD3255DA2FB00AA2469 /* AssociatedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCA3F5E255D9F0E00AA2469 /* AssociatedKey.swift */; };
+		CFCA3FD6255DA2FE00AA2469 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCA3F62255D9F0E00AA2469 /* ViewModel.swift */; };
+		CFCA3FD9255DA30200AA2469 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCA3F60255D9F0E00AA2469 /* Button.swift */; };
+		CFCA3FDC255DA59300AA2469 /* Fluxer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCA3F4E255D9EC900AA2469 /* Fluxer.framework */; };
+		CFCA3FDD255DA59300AA2469 /* Fluxer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFCA3F4E255D9EC900AA2469 /* Fluxer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFCA3FDE255DA59300AA2469 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFCA3FDD255DA59300AA2469 /* Fluxer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CFCA3F4E255D9EC900AA2469 /* Fluxer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fluxer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCA3F52255D9EC900AA2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCA3F5E255D9F0E00AA2469 /* AssociatedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedKey.swift; sourceTree = "<group>"; };
 		CFCA3F60255D9F0E00AA2469 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		CFCA3F62255D9F0E00AA2469 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CFCA3FB1255DA28700AA2469 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCA3FB3255DA28700AA2469 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
+		CFCA3FB5255DA28700AA2469 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CFCA3FB7255DA28700AA2469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFCA3FBA255DA28700AA2469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CFCA3FBC255DA28700AA2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCA3FC9255DA2B200AA2469 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +56,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFCA3FAE255DA28700AA2469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCA3FDC255DA59300AA2469 /* Fluxer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -29,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				CFCA3F5A255D9ED700AA2469 /* Sources */,
+				CFCA3FB2255DA28700AA2469 /* Demo */,
 				CFCA3F4F255D9EC900AA2469 /* Products */,
+				CFCA3FC2255DA29700AA2469 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -37,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CFCA3F4E255D9EC900AA2469 /* Fluxer.framework */,
+				CFCA3FB1255DA28700AA2469 /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +103,34 @@
 				CFCA3F60255D9F0E00AA2469 /* Button.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		CFCA3FB2255DA28700AA2469 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				CFCA3FB3255DA28700AA2469 /* DemoApp.swift */,
+				CFCA3FB5255DA28700AA2469 /* ContentView.swift */,
+				CFCA3FC9255DA2B200AA2469 /* ContentViewModel.swift */,
+				CFCA3FB7255DA28700AA2469 /* Assets.xcassets */,
+				CFCA3FBC255DA28700AA2469 /* Info.plist */,
+				CFCA3FB9255DA28700AA2469 /* Preview Content */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		CFCA3FB9255DA28700AA2469 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CFCA3FBA255DA28700AA2469 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CFCA3FC2255DA29700AA2469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,15 +164,37 @@
 			productReference = CFCA3F4E255D9EC900AA2469 /* Fluxer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CFCA3FB0255DA28700AA2469 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCA3FBF255DA28700AA2469 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				CFCA3FAD255DA28700AA2469 /* Sources */,
+				CFCA3FAE255DA28700AA2469 /* Frameworks */,
+				CFCA3FAF255DA28700AA2469 /* Resources */,
+				CFCA3FDE255DA59300AA2469 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = CFCA3FB1255DA28700AA2469 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CFCA3F45255D9EC900AA2469 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					CFCA3F4D255D9EC900AA2469 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					CFCA3FB0255DA28700AA2469 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -118,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				CFCA3F4D255D9EC900AA2469 /* Fluxer */,
+				CFCA3FB0255DA28700AA2469 /* Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +226,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFCA3FAF255DA28700AA2469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCA3FBB255DA28700AA2469 /* Preview Assets.xcassets in Resources */,
+				CFCA3FB8255DA28700AA2469 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +242,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCA3FD6255DA2FE00AA2469 /* ViewModel.swift in Sources */,
+				CFCA3FD9255DA30200AA2469 /* Button.swift in Sources */,
+				CFCA3FD3255DA2FB00AA2469 /* AssociatedKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCA3FAD255DA28700AA2469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCA3FB6255DA28700AA2469 /* ContentView.swift in Sources */,
+				CFCA3FB4255DA28700AA2469 /* DemoApp.swift in Sources */,
+				CFCA3FCA255DA2B200AA2469 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +433,50 @@
 			};
 			name = Release;
 		};
+		CFCA3FBD255DA28700AA2469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = V8AZ23YEL4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.touyu.Fluxer.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFCA3FBE255DA28700AA2469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = V8AZ23YEL4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.touyu.Fluxer.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +494,15 @@
 			buildConfigurations = (
 				CFCA3F57255D9EC900AA2469 /* Debug */,
 				CFCA3F58255D9EC900AA2469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCA3FBF255DA28700AA2469 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCA3FBD255DA28700AA2469 /* Debug */,
+				CFCA3FBE255DA28700AA2469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
