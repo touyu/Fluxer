@@ -1,6 +1,13 @@
 # Fluxer
 Flux + ViewModel framework for SwiftUI
 
+## Requirements
+- Swift 5
+- iOS 13
+
+## Installation
+Flxuer only support Swift Package Manager
+
 ## Usage
 
 ### 1. Create ViewModel
