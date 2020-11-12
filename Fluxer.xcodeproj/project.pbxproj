@@ -6,14 +6,12 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		CFCA3F53255D9EC900AA2469 /* Fluxer.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCA3F51255D9EC900AA2469 /* Fluxer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		CFCA3F4E255D9EC900AA2469 /* Fluxer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fluxer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFCA3F51255D9EC900AA2469 /* Fluxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fluxer.h; sourceTree = "<group>"; };
 		CFCA3F52255D9EC900AA2469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCA3F5E255D9F0E00AA2469 /* AssociatedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedKey.swift; sourceTree = "<group>"; };
+		CFCA3F60255D9F0E00AA2469 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		CFCA3F62255D9F0E00AA2469 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +28,7 @@
 		CFCA3F44255D9EC900AA2469 = {
 			isa = PBXGroup;
 			children = (
-				CFCA3F50255D9EC900AA2469 /* Fluxer */,
+				CFCA3F5A255D9ED700AA2469 /* Sources */,
 				CFCA3F4F255D9EC900AA2469 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,13 +41,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CFCA3F50255D9EC900AA2469 /* Fluxer */ = {
+		CFCA3F5A255D9ED700AA2469 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CFCA3F51255D9EC900AA2469 /* Fluxer.h */,
 				CFCA3F52255D9EC900AA2469 /* Info.plist */,
+				CFCA3F5E255D9F0E00AA2469 /* AssociatedKey.swift */,
+				CFCA3F62255D9F0E00AA2469 /* ViewModel.swift */,
+				CFCA3F5F255D9F0E00AA2469 /* UI */,
 			);
-			path = Fluxer;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CFCA3F5F255D9F0E00AA2469 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CFCA3F60255D9F0E00AA2469 /* Button.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +67,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCA3F53255D9EC900AA2469 /* Fluxer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +274,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Fluxer/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,8 +299,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Fluxer/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
