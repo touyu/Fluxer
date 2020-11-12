@@ -35,6 +35,7 @@ final class ContentViewModel: ViewModel {
     @Published var state = State()
 
     init() {
+        // Don't forget to call this function
         initilize()
     }
 
