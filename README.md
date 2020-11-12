@@ -1,8 +1,8 @@
-# Fluxer (Beta)
+# Fluxer 
 Flux + ViewModel framework for SwiftUI
 (inspired by [ReactorKit](https://github.com/ReactorKit/ReactorKit))
 
-(⚠️ Don't use in Production)
+(⚠️ Don't use in Production yet)
 
 ## Requirements
 - Swift 5
