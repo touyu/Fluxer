@@ -4,12 +4,12 @@ import PackageDescription
 let package = Package(
   name: "Fluxer",
   products: [
-    .library(name: "Fluxer", targets: ["Fluxer/Sources"]),
+    .library(name: "Fluxer", targets: ["Fluxer"]),
   ],
   dependencies: [
   ],
   targets: [
-    .target(name: "Fluxer", dependencies: [])
+    .target(name: "Fluxer", path: "Sources")
   ],
   swiftLanguageVersions: [.v5]
 )
