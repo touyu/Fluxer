@@ -88,7 +88,7 @@ struct ContentView: View {
 }
 ```
 
-Fluxer have some useful initializers for View.
+Fluxer have some useful initializers for Views.
 
 The following two codes have the same meaning.
 ```swift
