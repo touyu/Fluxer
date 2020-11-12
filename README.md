@@ -6,7 +6,7 @@ Flux + ViewModel framework for SwiftUI
 - iOS 13
 
 ## Installation
-Flxuer only support Swift Package Manager
+Fluxer only support Swift Package Manager
 
 ## Usage
 
