@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
   name: "Fluxer",
   products: [
-    .library(name: "Fluxer", targets: ["Fluxer"]),
+    .library(name: "Fluxer", targets: ["Sources"]),
   ],
   dependencies: [
   ],
