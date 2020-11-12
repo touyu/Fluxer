@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
   name: "Fluxer",
+  platforms: [.iOS(.v13)],
   products: [
     .library(name: "Fluxer", targets: ["Fluxer"]),
   ],
