@@ -76,9 +76,7 @@ public extension ViewModel where Self.ObjectWillChangePublisher == ObservableObj
 
         let transformedMutation = transform(mutation: mutation)
 
-        transformedMutation.sink { completion in
-
-        } receiveValue: { [weak self] mutation in
+        transformedMutation.sink { [weak self] mutation in
             self?.reduce(mutation: mutation)
         }
         .store(in: &cancellables)
