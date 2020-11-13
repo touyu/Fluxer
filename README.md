@@ -2,11 +2,11 @@
 Flux + ViewModel framework for SwiftUI
 (inspired by [ReactorKit](https://github.com/ReactorKit/ReactorKit))
 
-(⚠️ Don't use in Production yet)
+(⚠️ Don't use in production yet)
 
 ## Requirements
-- Swift 5
-- iOS 13
+- Swift 5.2+
+- iOS 13+
 
 ## Installation
 Fluxer only support Swift Package Manager
