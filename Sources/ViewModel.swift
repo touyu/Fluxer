@@ -76,7 +76,9 @@ public extension ViewModel where Self.ObjectWillChangePublisher == ObservableObj
 
         let transformedMutation = transform(mutation: mutation)
 
-        transformedMutation.sink { [weak self] mutation in
+        transformedMutation
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] mutation in
             self?.reduce(mutation: mutation)
         }
         .store(in: &cancellables)
